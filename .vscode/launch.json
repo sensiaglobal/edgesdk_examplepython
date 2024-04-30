@@ -1,0 +1,29 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.0.1",
+    "configurations": [
+        
+
+
+
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "env": {
+                "HOST": "173.0.0.43",
+                "PORT": "503",
+                "UNIT": "1",
+                "TIME_PERIOD": "1000",
+                "CONTROL_TIME_PERIOD": "1000",
+                "TIMEOUT": "500",
+                "RETRIES": "0"
+            },
+            "console": "integratedTerminal",
+            "justMyCode": false
+        }
+    ]
+}

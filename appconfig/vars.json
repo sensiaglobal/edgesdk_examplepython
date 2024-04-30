@@ -1,0 +1,62 @@
+{
+    "Variables": {
+        "Input_status": [
+        ],
+        "Coils": [
+        ],
+        "Input_registers": [
+            { 
+                "name": "cpu_temp",
+                "collection_size": 1,
+                "type": "float",
+                "register_number": 0,
+                "num_registers": 2,
+                "writable": false,
+                "word_swap": false,
+                "byte_swap": false
+            },
+            { 
+                "name": "cpu_usage",
+                "collection_size": 1,
+                "type": "float",
+                "register_number": 2,
+                "num_registers": 2,
+                "writable": false,
+                "word_swap": false,
+                "byte_swap": false
+            },
+            { 
+                "name": "mem_percentage_used",
+                "collection_size": 1,
+                "type": "float",
+                "register_number": 4,
+                "num_registers": 2,
+                "writable": false,
+                "word_swap": false,
+                "byte_swap": false
+            },
+            { 
+                "name": "local_time_second",
+                "collection_size": 1,
+                "type": "integer",
+                "register_number": 6,
+                "num_registers": 2,
+                "writable": false,
+                "word_swap": false,
+                "byte_swap": false
+            }
+        ],
+        "Holding_registers" :[
+            { 
+                "name": "result",
+                "collection_size": 1,
+                "type": "float",
+                "register_number": 0,
+                "num_registers": 2,
+                "writable": true,
+                "word_swap": false,
+                "byte_swap": false
+            }
+        ]
+    }
+}

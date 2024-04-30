@@ -1,0 +1,26 @@
+---
+version: '3.7'
+
+services:
+  myapp:
+    image: myapp:0.1.0
+    container_name: myapp
+    read_only: true
+    restart: on-failure
+    networks:
+      - network1
+    environment:
+      HOST: 192.168.1.41
+      PORT: 502
+      UNIT: 1
+      TIME_PERIOD: 1000
+      CONTROL_TIME_PERIOD: 1000
+      TIMEOUT: 500
+      RETRIES: 1
+    tmpfs:
+      - /temp:uid=5678,gid=5678
+networks:
+  network1:
+    name: edgenet
+    external: true
+...

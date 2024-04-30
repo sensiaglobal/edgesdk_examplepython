@@ -1,0 +1,16 @@
+BUILD:
+docker build .-f Dockerfile-offline -t myapp:0.0.1
+
+NOTE:-
+Depending on your build environment you may need to:
+    1. run the docker build with the 'sudo' rights
+    2. it may be required to log into the your docker instance using with
+        docker login
+
+RUN TEST:
+docker compose -f docker-compose-offline-test.yml up -d
+STOP TEST:
+docker compose -f docker-compose-offline-test.yml down -v
+
+RUN DEPLOY:
+docker compose -f docker-compose-offline.yml up -d
